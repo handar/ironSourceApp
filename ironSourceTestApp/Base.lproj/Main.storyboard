@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,115 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ironSourceTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWt-YK-mVI">
+                                <rect key="frame" x="0.0" y="57" width="414" height="790"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="gv4-4z-bSU">
+                                        <rect key="frame" x="76.5" y="158" width="261" height="474"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qZL-KX-qt0">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="68"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SupersonicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="N6T-xi-BLw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="261" height="68"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="261" id="RZO-2s-4r5"/>
+                                                            <constraint firstAttribute="height" constant="68" id="kEC-JX-ViK"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XWr-uA-Upe">
+                                                <rect key="frame" x="0.0" y="136" width="261" height="338"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXv-0z-PQ1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="261" height="43.5"/>
+                                                        <color key="backgroundColor" red="0.35412908919284419" green="0.5232075053996551" blue="0.92870196592004806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.98209856250000005" green="0.98657392190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Init SDK"/>
+                                                        <connections>
+                                                            <action selector="initButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZR3-si-Cf6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ5-SS-IcE">
+                                                        <rect key="frame" x="0.0" y="73.5" width="261" height="43.5"/>
+                                                        <color key="backgroundColor" red="0.35412908920000002" green="0.52320750540000005" blue="0.92870196589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.98209856250000005" green="0.98657392190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Show Rewarded Video"/>
+                                                        <connections>
+                                                            <action selector="showRewardedVideoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q56-4Q-kAJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chO-5N-ryr">
+                                                        <rect key="frame" x="0.0" y="147" width="261" height="44"/>
+                                                        <color key="backgroundColor" red="0.35412908920000002" green="0.52320750540000005" blue="0.92870196589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.98209856250000005" green="0.98657392190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Load Interstitial"/>
+                                                        <connections>
+                                                            <action selector="loadInterstitialButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGy-Ff-7fS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecX-7a-aqu">
+                                                        <rect key="frame" x="0.0" y="221" width="261" height="43.5"/>
+                                                        <color key="backgroundColor" red="0.35412908920000002" green="0.52320750540000005" blue="0.92870196589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.98209856250000005" green="0.98657392190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Show Interstitial"/>
+                                                        <connections>
+                                                            <action selector="showInterstitialButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMe-Pe-hnn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wr1-0j-S4U">
+                                                        <rect key="frame" x="0.0" y="294.5" width="261" height="43.5"/>
+                                                        <color key="backgroundColor" red="0.35412908920000002" green="0.52320750540000005" blue="0.92870196589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.98209856250000005" green="0.98657392190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Show Offerwall"/>
+                                                        <connections>
+                                                            <action selector="showOfferwallButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYv-LK-c2N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="338" id="lNU-hK-Khv"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gv4-4z-bSU" firstAttribute="centerY" secondItem="YWt-YK-mVI" secondAttribute="centerY" id="7Hg-Pu-ENE"/>
+                                    <constraint firstItem="gv4-4z-bSU" firstAttribute="centerX" secondItem="YWt-YK-mVI" secondAttribute="centerX" id="t0S-5r-4dU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YWt-YK-mVI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="0f9-Sb-ad5"/>
+                            <constraint firstItem="YWt-YK-mVI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5L2-xb-Ysn"/>
+                            <constraint firstItem="YWt-YK-mVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eHz-JQ-4Rk"/>
+                            <constraint firstItem="YWt-YK-mVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="y2e-Si-D24"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="initButton" destination="tXv-0z-PQ1" id="Nha-9O-nhG"/>
+                        <outlet property="loadInterstitialButton" destination="chO-5N-ryr" id="cti-mT-OaF"/>
+                        <outlet property="showInterstitialButton" destination="ecX-7a-aqu" id="tRZ-EU-2Bj"/>
+                        <outlet property="showOfferwallButton" destination="wr1-0j-S4U" id="XBf-XT-hhc"/>
+                        <outlet property="showRewardedVideoButton" destination="HQ5-SS-IcE" id="55L-Zz-6Fj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="117.85714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SupersonicLogo" width="205" height="43.5"/>
+    </resources>
 </document>
